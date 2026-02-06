@@ -2,10 +2,10 @@ package StudentTask;
 
 public class Student {
     private String name;
-    private int id;
+    private String id;
     private int yearOfStudy;
 
-    public Student(String name, int id) {
+    public Student(String name, String id) {
         this.name = name;
         this.id = id;
         this.yearOfStudy = 1;
@@ -15,7 +15,7 @@ public class Student {
         return name;
     }
 
-    public int getId() {
+    public String getId() {
         return id;
     }
 
@@ -25,5 +25,10 @@ public class Student {
 
     public void incrementYearOfStudy() {
         yearOfStudy++;
+    }
+
+    @Override
+    public String toString() {
+        return "Student{name='" + name + "', id=" + id + ", yearOfStudy=" + yearOfStudy + "}";
     }
 }
