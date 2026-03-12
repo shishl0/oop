@@ -54,8 +54,7 @@ public class Temperature {
         return scale;
     }
 
-    @Override
     public String toString() {
-        return String.format("%.1f %c", value, scale);
+        return value + " " + scale;
     }
 }
